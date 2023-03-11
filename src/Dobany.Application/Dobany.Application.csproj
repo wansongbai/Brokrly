@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props"></Import>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+		<AssemblyName>Dobany.Application</AssemblyName>
+		<PackageId>Dobany.Application</PackageId>
+		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<RootNamespace>Dobany</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="6.2.0" />
+		<PackageReference Include="AgoraIO" Version="1.0.0" />
+		<PackageReference Include="NPOI" Version="2.5.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Dobany.Application.Shared\Dobany.Application.Shared.csproj" />
+		<ProjectReference Include="..\Dobany.Core\Dobany.Core.csproj" />
+		<ProjectReference Include="..\Dobany.EntityFrameworkCore\Dobany.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+</Project>
