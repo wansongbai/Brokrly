@@ -10,13 +10,13 @@ namespace Dobany.Authorization.Accounts.Dto
 {
     public class RegisterInput : IValidatableObject
     {
-        [Required]
-        [StringLength(AbpUserBase.MaxNameLength)]
-        public string Name { get; set; }
+        //[Required]
+        //[StringLength(AbpUserBase.MaxNameLength)]
+        //public string Name { get; set; }
 
-        [Required]
-        [StringLength(AbpUserBase.MaxSurnameLength)]
-        public string Surname { get; set; }
+        //[Required]
+        //[StringLength(AbpUserBase.MaxSurnameLength)]
+        //public string Surname { get; set; }
 
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]

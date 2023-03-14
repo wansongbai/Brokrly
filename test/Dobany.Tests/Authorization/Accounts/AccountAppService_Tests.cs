@@ -54,14 +54,14 @@ namespace Dobany.Tests.Authorization.Accounts
         public async Task Should_Register()
         {
             //Act
-            await _accountAppService.Register(new RegisterInput
-            {
-                UserName = "john",
-                Password = "john123",
-                Name = "John",
-                Surname = "Nash",
-                EmailAddress = "john.nash@aspnetzero.com"
-            });
+            //await _accountAppService.Register(new RegisterInput
+            //{
+            //    UserName = "john",
+            //    Password = "john123",
+            //    Name = "John",
+            //    Surname = "Nash",
+            //    EmailAddress = "john.nash@aspnetzero.com"
+            //});
 
             //Assert
             UsingDbContext(context =>

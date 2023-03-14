@@ -100,9 +100,21 @@ namespace Dobany.Authorization.Accounts
                // await RecaptchaValidator.ValidateAsync(input.CaptchaResponse);
             }
 
+
+
+            //var user = await _userRegistrationManager.RegisterAsync(
+            //    input.Name,
+            //    input.Surname,
+            //    input.EmailAddress,
+            //    input.UserName,
+            //    input.Password,
+            //    false,
+            //    AppUrlService.CreateEmailActivationUrlFormat(AbpSession.TenantId)
+            //);
+
             var user = await _userRegistrationManager.RegisterAsync(
-                input.Name,
-                input.Surname,
+                input.EmailAddress,
+                input.EmailAddress,
                 input.EmailAddress,
                 input.UserName,
                 input.Password,
